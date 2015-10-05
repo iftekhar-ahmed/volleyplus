@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">VolleyPlus Demo</string>
+    <string name="action_clear_cache">Clear Cache Before Loading</string>
+    <string name="cloth_image">Cloth Image</string>
+</resources>

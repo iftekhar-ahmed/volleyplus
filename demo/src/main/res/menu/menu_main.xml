@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.iftekhar.volleyplusdemo.MainActivity">
+    <group
+        android:id="@+id/action_check_prefs"
+        android:checkableBehavior="all">
+        <item
+            android:id="@+id/action_clear_cache"
+            android:checked="false"
+            android:orderInCategory="100"
+            android:title="@string/action_clear_cache"
+            app:showAsAction="never" />
+    </group>
+</menu>

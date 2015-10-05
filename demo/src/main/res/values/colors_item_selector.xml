@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="item_focused">#33607D8B</color>
+    <color name="item_pressed">#33607D8B</color>
+    <color name="item_long_pressed">#66607D8B</color>
+    <color name="item_disabled">#80607D8B</color>
+</resources>
