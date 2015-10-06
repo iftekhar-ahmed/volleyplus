@@ -4,7 +4,7 @@ of request, caching and coalesching of response and request lifecycle management
 It also allows to go back to 'volley as usual' where you create custom or out-of-the-box volley Requests and place them in a RequestQueue. 
 In that case, you will be missing the features and ease of using **volleyplus** `Loader`.
 # Using volleyplus
-The `Loader` class in volleplus allows to load data without dealing with `Request` and `RequestQueue` for same data type over and over again. 
+The [Loader](https://github.com/iftekhar-ahmed/volleyplus/blob/master/library/src/main/java/com/iftekhar/volleyplus/Loader.java) class in volleplus allows to load data without dealing with `Request` and `RequestQueue` for same data type over and over again. 
 Your application needs only to use one instance of this class per data type for the entire lifecycle. That's why, when creating a custom `Loader`, 
 it is required to add the instance to the `VolleyPlus` loader pool and use it from there.
 
