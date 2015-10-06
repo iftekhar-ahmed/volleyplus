@@ -13,7 +13,7 @@ The library includes 2 out-of-the-box implementations of this class for `Bitmap`
  `JsonObject`
 ([JsonObjectLoader](https://github.com/iftekhar-ahmed/volleyplus/blob/master/library/src/main/java/com/iftekhar/volleyplus/toolbox/JsonObjectLoader.java)).
 Using these default `Loader` implementations and creating custom `Loader` for your own data types are both fairly simple. 
-## Using volleplus Loaders
+## Using volleyplus Loaders
 Here is an example of using the `JsonObjectLoader`,
 ```
 VolleyPlus volleyPlus = VolleyPlus.getInstance(getContext());
@@ -52,7 +52,7 @@ Creating a custom **volleyplus** `Loader` involves 2 steps,
 * Adding an instance of the `Loader` to [VolleyPlus](https://github.com/iftekhar-ahmed/volleyplus/blob/master/library/src/main/java/com/iftekhar/volleyplus/VolleyPlus.java)
 which is the global single access point to a pool of `Loader`s and a `RequestQueue` object
 
-Creating an instance of `Loader` takes two parameters, a `RequestQueue` and a [MemoryCache](https://github.com/iftekhar-ahmed/volleyplus/blob/master/library/src/main/java/com/iftekhar/volleyplus/MemoryCache.java) 
+When creating an instance, `Loader` takes in two parameters, a `RequestQueue` and a [MemoryCache](https://github.com/iftekhar-ahmed/volleyplus/blob/master/library/src/main/java/com/iftekhar/volleyplus/MemoryCache.java) 
 instance. Have a look at the `VolleyPlus` singleton class for examples of creating and adding `Loader` instances to pool.
 # License
 ```
