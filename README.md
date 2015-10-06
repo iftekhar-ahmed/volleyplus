@@ -1,7 +1,7 @@
 # volleyplus
 **volleyplus** is a wrapper library over [volley](https://android.googlesource.com/platform/frameworks/volley/) for doing easier network IO in android. It offers batch issuing and cancellation 
 of request, caching and coalesching of response and request lifecycle management for any data type; all on top of the flexibility and robustness of volley.
-It also allows to go back to volley as usual where you create custom or out-of-the-box volley Requests and place them in a RequestQueue. 
+It also allows to go back to 'volley as usual' where you create custom or out-of-the-box volley Requests and place them in a RequestQueue. 
 In that case, you will be missing the features and ease of using **volleyplus** `Loader`.
 # Using volleyplus
 The `Loader` class in volleplus allows to load data without dealing with `Request` and `RequestQueue` for same data type over and over again. 
@@ -11,7 +11,7 @@ it is required to add the instance to the `VolleyPlus` loader pool and use it fr
 The library includes 2 out-of-the-box implementations of this class for `Bitmap`
 ([BitmapLoader](https://github.com/iftekhar-ahmed/volleyplus/blob/master/library/src/main/java/com/iftekhar/volleyplus/toolbox/BitmapLoader.java)) and
  `JsonObject`
-([JsonObjectLoader](https://github.com/iftekhar-ahmed/volleyplus/blob/master/library/src/main/java/com/iftekhar/volleyplus/toolbox/JsonObjectLoader.java).)
+([JsonObjectLoader](https://github.com/iftekhar-ahmed/volleyplus/blob/master/library/src/main/java/com/iftekhar/volleyplus/toolbox/JsonObjectLoader.java)).
 Using these default `Loader` implementations and creating custom `Loader` for your own data types are both fairly simple. 
 ## Using volleplus Loaders
 Here is an example of using the `JsonObjectLoader`,
@@ -48,7 +48,7 @@ thumbnail.placeholder(R.drawable.ic_placeholder)
 `WebImageView` allows to cancel bitmap request at any time. It also handles cancellation of requests soon as a new request is issued. This makes it safe to use inside list adapters.
 ## Custom Loader
 Creating a custom **volleyplus** `Loader` involves 2 steps,
-* Extending the `Loader<T>` class where `T` is the data type. (Check the toolbox to see how the two default `Loader`s do it.)
+* Extending the `Loader<T>` class where `T` is the data type. (Check the [toolbox](https://github.com/iftekhar-ahmed/volleyplus/tree/master/library/src/main/java/com/iftekhar/volleyplus/toolbox) to see how the two default `Loader`s do it.)
 * Adding an instance of the `Loader` to [VolleyPlus](https://github.com/iftekhar-ahmed/volleyplus/blob/master/library/src/main/java/com/iftekhar/volleyplus/VolleyPlus.java)
 which is the global single access point to a pool of `Loader`s and a `RequestQueue` object
 
