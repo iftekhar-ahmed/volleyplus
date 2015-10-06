@@ -53,7 +53,7 @@ Creating a custom **volleyplus** `Loader` involves 2 steps,
 which is the global single access point to a pool of `Loader`s and a `RequestQueue` object
 
 Creating an instance of `Loader` takes two parameters, a `RequestQueue` and a [MemoryCache](https://github.com/iftekhar-ahmed/volleyplus/blob/master/library/src/main/java/com/iftekhar/volleyplus/MemoryCache.java) 
-instance. Have a look at the `VollePlus` singleton class for examples of creating and adding `Loader` instances to pool.
+instance. Have a look at the `VolleyPlus` singleton class for examples of creating and adding `Loader` instances to pool.
 # License
 ```
 Copyright 2015 Iftekhar Ahmed
